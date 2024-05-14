@@ -1,5 +1,5 @@
 import discord
-from gpt_assistant import ChatGPT
+from ai_assistant import ChatAI
 import os
 
 async def once_done(sink: discord.sinks, channel: discord.TextChannel, vc: discord.VoiceClient, user_id: int):
@@ -36,10 +36,10 @@ async def once_done(sink: discord.sinks, channel: discord.TextChannel, vc: disco
     if created_file:
       try:
         await channel.send("I'm trying to understand what you just said, wait a sec...")
-        chatGPT = ChatGPT()
+        chatAI = ChatAI()
         # Takes the input from user and generates response
-        await chatGPT.chat(channel)
-        vc.play(discord.FFmpegPCMAudio(chatGPT.response))
+        await chatAI.chat(channel)
+        vc.play(discord.FFmpegPCMAudio(chatAI.response))
         await channel.send("I answered you!")
       except Exception as e:
         print(e)
