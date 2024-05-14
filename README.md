@@ -37,5 +37,5 @@ It needs to be called after you finished using him.
 - [How To Host Your Bot Online 24/7](https://www.youtube.com/watch?v=2TI-tCVhe9k)
 
 ## Comment
-Hey, this is my first real project, so there might be a few mistakes here and there with the script ,:). If you notice anything, feel free to report the error to me.\
-Still, I hope you can find some use for it :).
+Hey, this is my first real project, so there might be a few mistakes here and there with the script 😅. If you notice anything, feel free to report the error to me.\
+Still, I hope you can find some use for it 🙂.
