@@ -7,13 +7,13 @@ from elevenlabs.client import ElevenLabs
 class ChatAI:
   def __init__(self):
     '''
-    Initialize the GPT model
+    Initialize all AI models and set-up the system for the chat functionality.
     '''
 
     # All path variables
     self.conversation = os.path.join(os.curdir, "src", "resources", "conversation.txt") # The conversation file is used to store the conversation history between the bot and the user
     self.personality = os.path.join(os.curdir, "src", "resources", "personality.txt") # The personality file is used to store the personality (prompt) that the bot has to use to chat with the user
-    self.speech = os.path.join(os.curdir, "src", "resources", "speech.wav") # The speech file is used to store the user's audio input # "large" for using non-english languages
+    self.speech = os.path.join(os.curdir, "src", "resources", "speech.mp3") # The speech file is used to store the user's audio input
     self.response = os.path.join(os.curdir, "src", "resources", "response.mp3") # The response file is used to store the bot's response
 
     # Openai Set-up

@@ -1,4 +1,4 @@
-FROM python:3.10
+FROM python:3.12
 WORKDIR /chatbot
 COPY requirements.txt .
 RUN pip install -r requirements.txt

@@ -2,7 +2,6 @@ import discord
 import dotenv
 import os
 import utils
-import asyncio
 
 # Permissions
 intents = discord.Intents.default()
@@ -107,8 +106,4 @@ async def leave(ctx):
   else:
     await ctx.respond("I'm currently not connected to a voice channel!")
 
-async def main():
-  bot.run(os.getenv("DISCORD_TOKEN"))
-
-if __name__ == "__main__":
-  asyncio.run(main())
+bot.run(os.getenv("DISCORD_TOKEN"))
